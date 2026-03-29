@@ -1,0 +1,7 @@
+nav{
+    width: 100%;
+    background-color: brown;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
