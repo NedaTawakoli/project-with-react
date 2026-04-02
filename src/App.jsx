@@ -1,11 +1,14 @@
- import Navbar from "./Nav";
+ import Header from "./Header";
+import Navbar from "./Nav";
 import navbar from "./navbar";
+// import hero from "./hero";
 
 function App(){
   return(
     <>
     <Navbar/>
-    <h1>Hi there</h1>
+    <Header text="مقاله در باره افقانیستان"/>
+    <example1/>    
     </>
   )
 }
