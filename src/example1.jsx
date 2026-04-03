@@ -1,16 +1,7 @@
-import { useState } from "react";
-
-function example1(){
-    const [value,setValue]= useState("");
-    return(
+function contact(){
+    return (
         <div>
-            <h1></h1>
-            <input style={
-                {
-                    border:"1px solid"
-                }
-            } type="text" value={"name"} />
+            <h1>In the name of All</h1>
         </div>
     )
-}
-export default example1;
+}export default contact;
