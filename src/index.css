@@ -3,4 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-<script = src="app.js"></scrpit>
+nav{
+  padding: 8px 35px;
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+ul{
+  display: flex;
+  gap: 10px;
+}
+ul > li{
+  list-style-type: none;
+}
+ul > li > a{
+  text-decoration: none;
+}
