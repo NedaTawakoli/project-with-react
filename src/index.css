@@ -8,6 +8,7 @@ nav{
   background-color: purple;
   color: white;
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 ul{

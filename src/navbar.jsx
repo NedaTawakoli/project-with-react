@@ -52,11 +52,31 @@ function Nav(){
     return(
         <>
         <nav>
-            <h3>Logo</h3>
-            <ul>
+            <h1 style={
+                {
+                    padding:"0 5px"
+                }
+            }>Logo</h1>
+            <ul style={
+                {
+                    display:"flex",
+                    justifyContent:"space-between",
+                    gap:"15px",
+                    fontSize:"20px",
+                    padding:"10px 5px",
+                    color:"white"
+                }
+            }>
               {list.map((item)=>(
-                <li>
-                    <Link to={item.link}>{item.name}</Link>
+                <li style={{
+                    listStyleType:"none"
+                }}>
+                    <Link style={
+                        {
+                            textDecoration:"none",
+                            color:"white"
+                        }
+                    } to={item.link}>{item.name}</Link>
                 </li>
               ))}
             </ul>
