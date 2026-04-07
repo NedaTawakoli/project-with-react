@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Header from "./Header";
 import Navbar from "./Nav";
 import navbar from "./navbar";
@@ -9,10 +9,14 @@ import Student from "./student";
 // import hero from "./hero";
 
 function App(){
+ const nav =  useNavigate();
+ function handleClick(){
+  nav('/school')
+ }
   return(
     <>
     <Nav/>
-    <Student/>
+    {/* <Student/> */}
     <h1 style={
       {
         textAlign:"center",
@@ -24,6 +28,7 @@ function App(){
          padding:"15px"
       }
     }>This is the Home page</h1>
+    <button onClick={handleClick}>Go to the Teacher Page</button>
     <Routes>
   {/* <Route path="/Header" element ={ Header } />
   <Route path="/navBar" element ={ navBar } /> */}

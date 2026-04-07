@@ -10,6 +10,7 @@ import Services from './Serveices.jsx';
 import Student from './student.jsx';
 import Details from './StudentDetails.jsx';
 import School from './school.jsx';
+import DeteilsSchool from './dateilsSchool.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
   <Route path='/student' element={<Student/>}/>
   <Route path='/student/:id' element={<Details/>}/>
   <Route path='/school' element={<School/>}/>
+  <Route path='details/:name' element={<DeteilsSchool/>}/>
  </Routes>
  </BrowserRouter>
   </StrictMode>,

@@ -36,3 +36,21 @@ export const listStudent =[
         score:"100",
     },
 ];
+
+export const schoolList = [
+    {
+        Name:"Bibi Zahra",
+        Manager:"Zohra Qurbani",
+        Gender:"Female"
+    },
+    {
+        Name:"Austad Sharifi",
+        Manager:"Esmatullah Ghulami",
+        Gender:"Male"
+    },
+    {
+        Name:"Hutqol Angori",
+        Manager:"Sadaf",
+        Gender:"Female"
+    },
+];

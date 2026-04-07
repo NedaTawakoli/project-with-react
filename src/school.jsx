@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { listStudent } from "../public/StudentInfo"
 import { schoolList } from "./StudentDetails"
 export default function School(){
+    const nav = useNavigate();
+    function school(){
+     nav('/')
+    }
     return(
         <div style={
             {
@@ -25,6 +29,7 @@ export default function School(){
                     color:"white"
                 }
             }>This is the of nearby schools</h1>
+            <button onClick={school}></button>
             <ul style={
                 {
                     display:"flex",
@@ -47,7 +52,7 @@ export default function School(){
                                 fontSize:"25px",
                                 color:"pink"
                             }
-                        } to={""}>{school.Name}</Link>
+                        } to={`details/ $ {school.name}`}>{school.Name}</Link>
                     </li>
                 ))}
             </ul>

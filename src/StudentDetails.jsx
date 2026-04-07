@@ -12,20 +12,3 @@ export default function Details(){
         </div>
     )
 }
-export const schoolList = [
-    {
-        Name:"Bibi Zahra",
-        Manager:"Zohra Qurbani",
-        Gender:"Female"
-    },
-    {
-        Name:"Austad Sharifi",
-        Manager:"Esmatullah Ghulami",
-        Gender:"Male"
-    },
-    {
-        Name:"Hutqol Angori",
-        Manager:"Sadaf",
-        Gender:"Female"
-    },
-];
