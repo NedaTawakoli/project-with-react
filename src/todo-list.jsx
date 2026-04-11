@@ -1,4 +1,4 @@
-export default function StudentList(stList){
+ function StudentList(stList){
     return <div className="parent">
    {stList.length > 0 && stList.map(item=>(
     <div className="box" key={item.id}>
@@ -14,3 +14,4 @@ export default function StudentList(stList){
    )}
     </div>
 }
+export default StudentList;

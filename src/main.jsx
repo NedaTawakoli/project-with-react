@@ -5,25 +5,30 @@ import Header from './Header.jsx';
 // import App from './App.jsx';
 // import './index.css'
 import App from './App.jsx'
-import AboutPage from './About.jsx';
-import Services from './Serveices.jsx';
-import Student from './student.jsx';
-import Details from './StudentDetails.jsx';
-import School from './school.jsx';
-import DeteilsSchool from './dateilsSchool.jsx';
+// import AboutPage from './About.jsx';
+// import Services from './Serveices.jsx';
+// import Student from './student.jsx';
+// // import Details from './StudentDetails.jsx';
+// import School from './school.jsx';
+// import DeteilsSchool from './dateilsSchool.jsx';
+import StudentList from './todo-list.jsx';
+import Testing from './Test.jsx';
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
  <BrowserRouter>
  <Routes>
-  <Route path='/' element={<App/>}/>
+  {/* <Route path='/' element={<App/>}/>
   <Route path='/about' element={<AboutPage/>}/>
   <Route path='/services' element={<Services/>}/>
   <Route path='/student' element={<Student/>}/>
   <Route path='/student/:id' element={<Details/>}/>
   <Route path='/school' element={<School/>}/>
-  <Route path='details/:name' element={<DeteilsSchool/>}/>
+  <Route path='details/:name' element={<DeteilsSchool/>}/> */}
+  
+  <Route path='data' element={<StudentList/>}/>
+  <Route path='test' element={<Testing/>}/>
  </Routes>
  </BrowserRouter>
   </StrictMode>,
