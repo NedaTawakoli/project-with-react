@@ -13,6 +13,8 @@ import App from './App.jsx'
 // import DeteilsSchool from './dateilsSchool.jsx';
 import StudentList from './todo-list.jsx';
 import Testing from './Test.jsx';
+import Posts from './post.jsx';
+
 
 
 createRoot(document.getElementById('root')).render(
@@ -29,6 +31,7 @@ createRoot(document.getElementById('root')).render(
   
   <Route path='data' element={<StudentList/>}/>
   <Route path='test' element={<Testing/>}/>
+  <Route path='post' element={<Posts/>}/>
  </Routes>
  </BrowserRouter>
   </StrictMode>,
