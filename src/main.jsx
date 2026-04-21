@@ -1,38 +1,38 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from './Header.jsx';
-// import App from './App.jsx';
-// import './index.css'
-import App from './App.jsx'
-// import AboutPage from './About.jsx';
-// import Services from './Serveices.jsx';
-// import Student from './student.jsx';
-// // import Details from './StudentDetails.jsx';
-// import School from './school.jsx';
-// import DeteilsSchool from './dateilsSchool.jsx';
-import StudentList from './todo-list.jsx';
-import Testing from './Test.jsx';
-import Posts from './post.jsx';
+// import { StrictMode } from 'react'
+// import { createRoot } from 'react-dom/client'
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import Header from './Header.jsx';
+// // import App from './App.jsx';
+// // import './index.css'
+// import App from './App.jsx'
+// // import AboutPage from './About.jsx';
+// // import Services from './Serveices.jsx';
+// // import Student from './student.jsx';
+// // // import Details from './StudentDetails.jsx';
+// // import School from './school.jsx';
+// // import DeteilsSchool from './dateilsSchool.jsx';
+// import StudentList from './todo-list.jsx';
+// import Testing from './Test.jsx';
+// import Posts from './post.jsx';
 
 
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
- <BrowserRouter>
- <Routes>
-  {/* <Route path='/' element={<App/>}/>
-  <Route path='/about' element={<AboutPage/>}/>
-  <Route path='/services' element={<Services/>}/>
-  <Route path='/student' element={<Student/>}/>
-  <Route path='/student/:id' element={<Details/>}/>
-  <Route path='/school' element={<School/>}/>
-  <Route path='details/:name' element={<DeteilsSchool/>}/> */}
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//  <BrowserRouter>
+//  <Routes>
+//   {/* <Route path='/' element={<App/>}/>
+//   <Route path='/about' element={<AboutPage/>}/>
+//   <Route path='/services' element={<Services/>}/>
+//   <Route path='/student' element={<Student/>}/>
+//   <Route path='/student/:id' element={<Details/>}/>
+//   <Route path='/school' element={<School/>}/>
+//   <Route path='details/:name' element={<DeteilsSchool/>}/> */}
   
-  <Route path='data' element={<StudentList/>}/>
-  <Route path='test' element={<Testing/>}/>
-  <Route path='post' element={<Posts/>}/>
- </Routes>
- </BrowserRouter>
-  </StrictMode>,
-)
+//   <Route path='data' element={<StudentList/>}/>
+//   <Route path='test' element={<Testing/>}/>
+//   <Route path='post' element={<Posts/>}/>
+//  </Routes>
+//  </BrowserRouter>
+//   </StrictMode>
+// )

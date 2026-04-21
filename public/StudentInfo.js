@@ -54,3 +54,47 @@ export const schoolList = [
         Gender:"Female"
     },
 ];
+export const ListStudents = [
+    {
+        Id:1,
+        Name:"Ali",
+        LastName:"Ahmadi",
+        Gender:"Male",
+        Age:18,
+    },
+    {
+        Id:2,
+        Name:"Alina",
+        LastName:"Ahmadian",
+        Gender:"Female",
+        Age:16,
+    },
+    {
+        Id:3,
+        Name:"Alima",
+        LastName:"Qurbani",
+        Gender:"Female",
+        Age:19,
+    },
+    {
+        Id:4,
+        Name:"Alia",
+        LastName:"Yaqobi",
+        Gender:"Female",
+        Age:20,
+    },
+    {
+        Id:5,
+        Name:"Anita",
+        LastName:"Sultani",
+        Gender:"Female",
+        Age:17,
+    },
+    {
+        Id:6,
+        Name:"Fatima",
+        LastName:"Mahmodi",
+        Gender:"Female",
+        Age:18,
+    },
+];

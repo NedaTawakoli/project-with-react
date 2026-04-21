@@ -1,44 +1,61 @@
-import { Route, Routes, useNavigate } from "react-router-dom";
-import Header from "./Header";
-import Navbar from "./Nav";
-import navbar from "./navbar";
-import navBar from "./Nav";
-import AboutPage from "./About";
-import Nav from "./navbar";
-import Student from "./student";
-// import hero from "./hero";
+// import { Route, Routes, useNavigate } from "react-router-dom";
+// import Header from "./Header";
+// import Navbar from "./Nav";
+// import navbar from "./navbar";
+// import navBar from "./Nav";
+// import AboutPage from "./About";
+// import Nav from "./navbar";
+// import Student from "./student";
+// // import hero from "./hero";
 
-function App(){
- const nav =  useNavigate();
- function handleClick(){
-  nav('/school')
- }
-  return(
-    <>
-    <Nav/>
-    {/* <Student/> */}
-    <h1 style={
-      {
-        textAlign:"center",
-         border:"1px solid",
-         width:"fit-content",
-         margin:"20px auto",
-         borderRadius:"5px",
-         color:"purple",
-         padding:"15px"
-      }
-    }>This is the Home page</h1>
-    <button onClick={handleClick}>Go to the Teacher Page</button>
-    <Routes>
-  {/* <Route path="/Header" element ={ Header } />
-  <Route path="/navBar" element ={ navBar } /> */}
-  {/* <Route path="/about" element={AboutPage}/> */}
-    </Routes>
-    {/* <Navbar/>  */}
+import { createContext } from "react"
+import { ListStudents } from "../public/StudentInfo";
+import Home from "./Home";
+import Details from "./StudentDetails";
+
+// function App(){
+//  const nav =  useNavigate();
+//  function handleClick(){
+//   nav('/school')
+//  }
+//   return(
+//     <>
+//     <Nav/>
+//     {/* <Student/> */}
+//     <h1 style={
+//       {
+//         textAlign:"center",
+//          border:"1px solid",
+//          width:"fit-content",
+//          margin:"20px auto",
+//          borderRadius:"5px",
+//          color:"purple",
+//          padding:"15px"
+//       }
+//     }>This is the Home page</h1>
+//     <button onClick={handleClick}>Go to the Teacher Page</button>
+//     <Routes>
+//   {/* <Route path="/Header" element ={ Header } />
+//   <Route path="/navBar" element ={ navBar } /> */}
+//   {/* <Route path="/about" element={AboutPage}/> */}
+//     </Routes>
+//     {/* <Navbar/>  */}
   
-    {/* <Header text="مقاله در باره افقانیستان"/> */}
-    {/* <example1/>     */}
-    </>
+//     {/* <Header text="مقاله در باره افقانیستان"/> */}
+//     {/* <example1/>     */}
+//     </>
+//   )
+// }
+// export default App;
+export const StudentContext = createContext();
+export default function App(){
+  const list = ListStudents;
+  return(
+    <div>
+     <StudentContext.Provider value={list}>
+      <Home/>
+     </StudentContext.Provider>
+     <Details/>
+    </div>
   )
 }
-export default App;
