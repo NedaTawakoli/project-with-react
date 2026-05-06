@@ -1,9 +1,10 @@
-import Student from "./StudentContext";
+// import Student from "./StudentContext";
 
-export default function Home(){
-    return(
-        <div>
-            <Student/>
-        </div>
-    )
-}
+// export default function Home(){
+//     return(
+//         <div>
+//             <h1>in the name of allah</h1>
+//             <Student/>
+//         </div>
+//     )
+// }

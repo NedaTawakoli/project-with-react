@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-nav{
+ }
+ /*nav{
   padding: 8px 35px;
   background-color: purple;
   color: white;
@@ -20,4 +20,4 @@ ul > li{
 }
 ul > li > a{
   text-decoration: none;
-}
+} */

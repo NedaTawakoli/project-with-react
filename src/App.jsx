@@ -7,11 +7,12 @@
 // import Nav from "./navbar";
 // import Student from "./student";
 // // import hero from "./hero";
+// import { ListStudents } from "../public/StudentInfo";
+// import Home from "./Home";
+// import Details from "./StudentDetails";
 
-import { createContext } from "react"
-import { ListStudents } from "../public/StudentInfo";
-import Home from "./Home";
-import Details from "./StudentDetails";
+import React,{ useReducer , useState } from "react";
+
 
 // function App(){
 //  const nav =  useNavigate();
@@ -46,16 +47,68 @@ import Details from "./StudentDetails";
 //     </>
 //   )
 // }
-// export default App;
-export const StudentContext = createContext();
-export default function App(){
-  const list = ListStudents;
-  return(
-    <div>
-     <StudentContext.Provider value={list}>
-      <Home/>
-     </StudentContext.Provider>
-     <Details/>
-    </div>
-  )
+// // export default App;
+let intialValue = 0;
+function reducer(state,show){
+  if(show==="increament"){
+    return state-1;
+  }
+  else if(show==="reset"){
+    return state = intialValue;
+  }
+  else{
+   return state+1;
+  }
 }
+ function App(){
+  const [state,func] = useReducer(reducer,intialValue);
+  return(
+    <div style={
+      {
+        backgroundColor:"black",
+        textAlign:"center",
+        fontSize:"30px",
+        display:"flex",
+        height:"100vh",
+        alignItems:"center",
+        justifyContent:"center",
+        flexDirection:"column"
+      }
+    }>
+      <h1 style={
+        {
+          color:"white",
+          boxShadow:"8px 8px 20px purple",
+        }
+      }>{state}</h1>
+      <button style={
+        {
+          width:"20%",
+          margin:"10px auto",
+          padding:"10px",
+          fontSize:"20px",
+          boxShadow:"8px 8px 20px purple",
+        }
+      } onClick={()=>func({type:"increament"})}>Increament</button>
+      <button style={
+        {
+          width:"20%",
+          margin:"10px auto",
+          padding:"10px",
+          fontSize:"20px",
+          boxShadow:"8px 8px 20px purple",
+        }
+      } onClick={()=>func({type:"dec"})}>Decreament</button>
+      <button style={
+        {
+          width:"20%",
+          margin:"10px auto",
+          padding:"10px",
+          fontSize:"20px",
+          boxShadow:"8px 8px 20px purple",
+        }
+      } onClick={()=>func({type:"reset"})}>Reset</button>
+    </div>
+  );
+ }
+ export default App;
