@@ -6,9 +6,9 @@ function Q2(){
       inputRaf.current.focus();
     }
     return(
-        <div>
-            <input ref={inputRaf} style={{border:"1px solid"}} type="text" />
-            <button onClick={handleClick}>Click Me</button>
+        <div style={{width:"100%",display:"flex",height:"20vh", textAlign:"center",gap:"20px"}}>
+            <input ref={inputRaf} style={{border:"1px solid",height:"8vh",margin:"30px auto",focus:"purple",borderRadius:"8px"}} type="text" />
+            <button style={{backgroundColor:"purple",color:"white",fontSize:"20px", margin:"25px auto",height:"8vh",padding:"15px 20px",borderRadius:"8px"}} onClick={handleClick}>Click Me</button>
         </div>
     )
 }

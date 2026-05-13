@@ -19,6 +19,9 @@ import Q4 from "./Component/Question4";
 import Q5 from "./Component/Question5";
 import Q6 from "./Component/Question6";
 import Q7 from "./Component/Question7";
+import Q8 from "./Component/Question8";
+import Q9 from "./Component/Question9";
+import Q10 from "./Component/Question10";
 
 // import React,{ useReducer , useState } from "react";
 
@@ -179,16 +182,28 @@ import Q7 from "./Component/Question7";
 // {/* <Q2/>  */}
 // }
 // export default App;
-export default function App(){
+//  --------------- labminval ---------
+// export default function App(){
+//   return(
+//     <div style={{backgroundColor:"black"}}>
+//      <Q2/>
+//      <Q3/> 
+//     <Q4/>
+//       <Q5/>
+//         <Q6/>
+//         <Q7/>
+//     </div>
+   
+//   )
+// }
+//  -------------- end labminval -----------
+function App(){
   return(
     <div>
-     <Q2/>
-     <Q3/> 
-    <Q4/>
-      <Q5/>
-        <Q6/>
-        <Q7/>
+   <Q8/>
+   <Q9/>
+   <Q10/>
     </div>
-   
   )
 }
+export default App;

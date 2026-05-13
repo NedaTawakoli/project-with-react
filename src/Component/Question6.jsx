@@ -13,11 +13,11 @@ function Q6(){
            return()=> clearInterval(interval);
     },[running]);
   return(
-    <div >
-        <h1 style={{textAlign:"center",margin:"20px 0",color:"purple"}}>{second}</h1>
+    <div style={{width:"100%",display:"flex",justifyContent:"space-between",padding:"20px 40px",color:"white",margin:"30px 0"}}>
         <div style={{width:"100%",display:"flex",gap:"8px"}}>
-        <button onClick={()=>setRunning(true)} style={{padding:"10px 15px",borderRadius:"8px",color:"white",margin:"10px auto", backgroundColor:"red"}}>Start</button>
-        <button onClick={()=>setRunning(false)} style={{padding:"10px 15px",borderRadius:"8px",color:"white",margin:"10px auto", backgroundColor:"purple"}}>Stop</button>
+        <button onClick={()=>setRunning(true)} style={{padding:"10px 25px",borderRadius:"8px",color:"white",margin:"10px auto", backgroundColor:"red"}}>Start</button>
+        <h1 style={{textAlign:"center",margin:"20px 0",color:"white"}}>{second}</h1>
+        <button onClick={()=>setRunning(false)} style={{padding:"10px 25px",borderRadius:"8px",color:"white",margin:"10px auto", backgroundColor:"purple"}}>Stop</button>
         </div>
     </div>
   )

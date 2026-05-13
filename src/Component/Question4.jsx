@@ -13,8 +13,8 @@ function Q4(){
     }
   }
     return(
-        <div ref={ref} style={{height:"200px",width:"100%"}}>
-            <button onClick={handleClick}>Change The Bg</button>
+        <div ref={ref} style={{height:"200px",width:"100%",display:"flex",color:"white",justifyContent:"space-between",padding:"20px 40px"}}>
+            <button style={{height:"10vh",backgroundColor:"purple",color:"white",fontSize:"20px",borderRadius:"8px" ,padding:"20px 30px"}} onClick={handleClick}>Change The Bg</button>
         <h1>You have changed the Bg {counter} times</h1>
         </div>
     )
