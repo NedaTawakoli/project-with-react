@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 
 function Q10() {
     const [running, setRunning] = useState(false);
-    const [second, setSeconds] = useState(60);
+    const [second, setSeconds] = useState(10);
+    const [myChoice,setMyChoice]=useState(0);
 
     useEffect(() => {
         let i;
@@ -23,6 +24,9 @@ function Q10() {
         return () => clearInterval(i);
 
     }, [running, second]);
+    function func(){
+        setSeconds(myChoice);
+    }
 
     return (
         <div style={{ width: "100%", height: "55vh", color: "white" }}>
@@ -39,6 +43,11 @@ function Q10() {
                     borderRadius: "8px",
                 }}
             >
+                <div style={{display:"flex",width:"100%",gap:"10px"}}>
+                    
+            <input value={myChoice} onChange={(e)=>setMyChoice(+e.target.value)} type="number" style={{border:"1px solid white",width:"100%",padding:"10px 0",borderRadius:"8px"}} />
+            <button onClick={func} style={{padding:"8px 30px", border:"1px solid white",borderRadius:"8px",color:"orange"}}>SetTime</button>
+                </div>
                 <h1
                     style={{
                         textAlign: "center",

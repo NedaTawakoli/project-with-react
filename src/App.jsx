@@ -22,6 +22,7 @@ import Q7 from "./Component/Question7";
 import Q8 from "./Component/Question8";
 import Q9 from "./Component/Question9";
 import Q10 from "./Component/Question10";
+import Q11 from "./Component/Question11";
 
 // import React,{ useReducer , useState } from "react";
 
@@ -203,6 +204,7 @@ function App(){
    <Q8/>
    <Q9/>
    <Q10/>
+   <Q11/>
     </div>
   )
 }
