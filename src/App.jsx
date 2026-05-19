@@ -25,6 +25,17 @@ import Q10 from "./Component/Question10";
 import Q11 from "./Component/Question11";
 import Q12 from "./Component/Question12";
 import Q13 from "./Component/Question13";
+import Q14 from "./Component/Question14";
+import Q15 from "./Component/Question15";
+import Q16 from "./Component/Question16";
+import Q17 from "./Component/Question17";
+import Q18 from "./Component/Question18";
+import Q19 from "./Component/Question19";
+import Q20 from "./Component/Question20";
+import Q21 from "./Component/Question21";
+import { Route, Routes } from "react-router-dom";
+import Q22 from "./Component/Question22";
+import Q23 from "./Component/Question23";
 
 // import React,{ useReducer , useState } from "react";
 
@@ -201,10 +212,44 @@ import Q13 from "./Component/Question13";
 // }
 //  -------------- end labminval -----------
 function App(){
+  const listStudent =[
+    {
+      id:1,
+      name:"Ali",
+      lastName:"Qurbani"
+    },
+    {
+      id:2,
+      name:"Alina",
+      lastName:"Ahmadi"
+    },
+    {
+      id:3,
+      name:"Sadaf",
+      lastName:"Baqari"
+    },
+  ];
   return(
-    <div>
+    <div style={{backgroundColor:"purple",color:"white"}}>
+      {/* <nav style={{width:"100%",backgroundColor:"purple",color:"white",display:"flex",justifyContent:"space-between",padding:"20px 30px"}}>
+        <h1>My App</h1>
+        <button style={{padding:"15px 30px",borderRadius:"8px",border:"0"}}>Save</button>
+      </nav> */}
+      {/* <Q15 text="Wow Wow"/>
+      <Q14 stList ={listStudent}/>
+      <Q16/>
+      <Q17/> */}
       <Q13/>
+      <Q22/>
+      {/* <Q23/> */}
+   {/* <Routes>
+    <Route path="/home" element={<Q18/>}/>
+    <Route path="/about" element={<Q19/>}/>
+    <Route path="/services" element={<Q20/>}/>
+    <Route path="/contact" element={<Q21/>}/>
+   </Routes> */}
     </div>
   )
 }
+{/* <Q13/> */}
 export default App;
